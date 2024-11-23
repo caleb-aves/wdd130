@@ -3,6 +3,12 @@
     --borders-color: black;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: var(--main-color);
     padding: 10px;
@@ -22,9 +28,10 @@ div {
     border: 1px solid rgb(255, 255, 255);
 }
 
-div img {
-    position: absolute;
-    right: 15px;
+main img {
+    /* position: absolute;
+    right: 15px; */
+    float: right;
     margin: 20px;
     width: auto;
     height: 170px;
@@ -72,7 +79,7 @@ ul {
     box-sizing: border-box;
 }
 
-/* Class selectors */
+/*Class selectors*/
 
 .box {
     margin: 1rem;
