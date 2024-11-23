@@ -18,16 +18,24 @@ h1 {
     color: var(--main-color);
 }
 
-main img {
-    width: 150px;
-    height: auto;
+div {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+div img {
+    position: absolute;
+    right: 15px;
+    margin: 20px;
+    width: auto;
+    height: 170px;
     border: 1px solid var(--borders-color);
     padding: 2px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 main {
@@ -35,22 +43,41 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    color: #eee;
 }
 
 footer {
     margin-top: 1rem;
     border-top: 1px solid var(--borders-color);
     text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--borders-color);
+    background-color:#eee;
+    color: #333;
 }
