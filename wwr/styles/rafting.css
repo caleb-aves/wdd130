@@ -11,6 +11,7 @@
 h1 {
     color: var(--accent1-color);
     font-family: var(--heading-font);
+    text-shadow: 3px 3px 5px var(--primary-color);
 }
 
 h1, h2 {
@@ -54,7 +55,7 @@ nav {
     text-align: justify;
     align-content: center;
     padding: 1rem;
-    bottom: -15px;
+    bottom: 0%;
     background-color: var(--accent1-color);
 }
 
@@ -64,4 +65,15 @@ nav {
     height: 150px;
     width: auto;
 
+}
+
+section img {
+    width: 300px;
+    height: 250px;
+}
+
+nav a img {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
