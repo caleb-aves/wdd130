@@ -10,18 +10,26 @@
 }
 
 nav {
+    display: flex;
     background-color: var(--main-color);
     padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--main-color);
+    padding: 1rem;
+    border-bottom: solid 2px var(--main-color);
 }
 
 div {
@@ -43,16 +51,20 @@ main img {
 
 p {
     padding: 1rem;
+    text-align: justify;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     position: relative;
     width: 20rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -67,16 +79,27 @@ aside h2 {
     color: #eee;
 }
 
-footer {
-    margin-top: 1rem;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
     border-top: 1px solid var(--borders-color);
     text-align: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+div {
+    grid-template-columns: 1fr 2fr;
 }
 
 ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: left;
 }
 
 /* Class Selectors */
