@@ -8,11 +8,24 @@
 }
 /* url pallete: https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500 */
 
+body {
+    width: 100%;
+    margin: 0%;
+}
+
 header {
     display: grid;
     grid-template-columns: 30%, 1fr, 50%;
     grid-template-rows: 1fr;
+    background-color: #219ebc;
 }
+
+nav {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 header nav {
     display: flex;
@@ -24,6 +37,22 @@ header nav {
 
 header nav a{
     min-width: 80px;
+    color: #ff8800;
+    text-shadow: 1px 1px #003e5d;
+}
+
+header nav a:hover{
+    color: var(--accent1-color);
+    font-size: large;
+    text-shadow: 1px 1px #003e5d;
+}
+
+header nav a:visited{
+    text-decoration: none;
+}
+
+header nav a:active{
+    text-decoration: none;
 }
 
 h1 {
@@ -46,13 +75,6 @@ a {
     font-family: var(--heading-font);
 }
 
-nav {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-
 
 .hero div {
     position: relative;
@@ -71,7 +93,7 @@ nav {
 }
 
 .hero article {
-    position: absolute;
+    position: bottom;
     text-align: justify;
     align-content: center;
     padding: 1rem;
@@ -96,4 +118,14 @@ nav a img {
     position: relative;
     width: 50px;
     height: 50px;
+}
+
+#logo:hover {
+    animation: spin ease 3s infinite;
+}
+
+@keyframes spin {
+    0%{transform: rotate(0); transform: scale(1);}
+    50%{transform: rotate(180deg); transform: scale(0.7);}
+    100%{transform: rotate(360deg); transform: scale(1);}
 }
